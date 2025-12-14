@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arabic Steps - 輕鬆學阿語</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Noto Sans TC', 'sans-serif'],
+              arabic: ['Amiri', 'Noto Sans Arabic', 'serif'],
+            },
+            colors: {
+              'desert-sand': '#F4E4BC',
+              'terracotta': '#E07A5F',
+              'deep-blue': '#3D405B',
+              'sage-green': '#81B29A',
+              'warm-yellow': '#F2CC8F',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar for cuteness */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #F4E4BC;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #E07A5F;
+        border-radius: 5px;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-desert-sand text-deep-blue">
+    <div id="root"></div>
+  </body>
+</html>
